@@ -1,0 +1,223 @@
+ /* Body Styling */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #e7e7e7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper Styling */
+.wrapper {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  margin: 3% auto;
+  box-shadow: 2px 18px 70px 0px #9D9D9D;
+  overflow: hidden;
+}
+
+/* Login Section */
+.login-text {
+  width: 800px;
+  height: 450px;
+  background: linear-gradient(to left, #ab68ca, #de67a3);
+  position: absolute;
+  top: -300px; /* hidden initially */
+  box-sizing: border-box;
+  padding: 6%;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+
+/* Text Container Inside Login */
+.login-text .text {
+  margin-left: 20px;
+  color: #fff;
+  display: none; /* hidden initially */
+  transition: all 0.5s ease-in-out 0.3s;
+}
+
+/* Show form when toggled */
+.login-text .text.show-hide {
+  display: block;
+}
+
+/* Login Link */
+.login-text .text a {
+  font-size: 36px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+/* Divider Line */
+.login-text .text hr {
+  width: 10%;
+  float: left;
+  background: #fff;
+  height: 2px;
+  border: none;
+}
+
+/* Input Fields */
+.login-text .text input {
+  display: block;
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 2px;
+  background: #444;
+  opacity: 0.6;
+  outline: none;
+  color: #fff;
+  padding-left: 10px;
+  margin: 0 auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Add top margin only to first input */
+.login-text .text input[name="username"] {
+  margin-top: 60px;
+}
+
+/* Add space between username and password */
+.login-text .text input[name="password"] {
+  margin-top: 20px; /* 👈 new rule */
+}
+
+/* Focus State */
+.login-text .text input:focus {
+  opacity: 1;
+}
+
+/* Button Container */
+.login-text .text .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+/* Buttons */
+.login-text .text button {
+  height: 40px;
+  width: 140px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Login Button */
+.login-text .text .login-btn {
+  background: #fff;
+  border: none;
+  color: #696a86;
+}
+
+/* Login Hover */
+.login-text .text .login-btn:hover {
+  transform: translateY(-2px);
+  background: #f0f0f0;
+}
+
+/* Signup Button */
+.login-text .text .signup-btn {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* Signup Hover */
+.login-text .text .signup-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Circular CTA Button */
+.cta {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #696a86;
+  border: 2px solid #fff;
+  color: #fff;
+  position: absolute;
+  bottom: -30px;
+  left: 370px; /* centers it */
+  z-index: 20;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* Hover Effect for CTA */
+.cta:hover {
+  transform: scale(1.1);
+}
+
+/* Call-to-Action Section */
+.call-text {
+  background: #fff;
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  bottom: 0;
+  padding: 10%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Heading */
+.call-text h1 {
+  font-size: 42px;
+  margin-top: 10%;
+  color: #696a86;
+}
+
+/* Highlighted Span */
+.call-text h1 span {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Button */
+.call-text button {
+  height: 40px;
+  width: 180px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to left, #ab68ca, #de67a3);
+  color: #fff;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.call-text button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Classes */
+.show-hide {
+  display: block;
+}
+
+.expand {
+  transform: translateY(300px);
+}
+
+/* Error Messages */
+.error-message {
+  color: #ffcccc;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  display: none;
+}

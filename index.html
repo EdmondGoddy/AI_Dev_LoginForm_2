@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Creative Community Login">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Creative Community Login</title>
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">  
+
+</head>
+<body>
+  <div class="wrapper">
+    
+    <!-- Login Section -->
+    <div class="login-text">
+      <!-- Toggle Button -->
+      <button class="cta">
+        <i class="fas fa-chevron-down"></i>
+
+      </button>
+
+      <!-- Login Form Container -->
+      <div class="text">
+        <form id="loginForm">
+          <a href="">Login</a>
+          <hr>
+          <br>
+
+          <!-- Username Input -->
+          <input type="text" name="username" placeholder="Username" required autocomplete="off">
+          <div id="username-error" class="error-message"></div>
+
+          <!-- Password Input -->
+          <input type="password" name="password" placeholder="Password" required>
+          <div id="password-error" class="error-message"></div>
+
+          <!-- Buttons -->
+          <div class="button-container">
+            <button type="submit" class="login-btn">Log In</button>
+            <button type="button" id="signupBtn" class="signup-btn">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div class="call-text">
+      <h1>Make <span>Your</span> Mark</h1>
+      <button id="joinBtn">Join the Community</button>
+    </div>
+
+  </div>
+
+
+
+  <!-- External JavaScript -->
+  <script src="js/javascript.js"></script>
+</body>
+
+</html>
