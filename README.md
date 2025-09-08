@@ -18,7 +18,7 @@ A stylish, interactive login form with gradient backgrounds, toggle reveal effec
 ---
 
 ## Live Demo
-[View Live Demo](https://YourUsername.github.io/AI_Dev_LoginForm_2/)
+[View Live Demo](https://EdmondGoddy.github.io/AI_Dev_LoginForm_2/)
 
 ---
 
